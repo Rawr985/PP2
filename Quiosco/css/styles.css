@@ -39,22 +39,49 @@ nav a {
 }
 
 .categoria-titulo {
-    background-color: #679B9B; /* Cambio de color de fondo */
+    background-color: #679B9B;
     color: #FFFFFF;
     cursor: pointer;
     padding: 10px;
     position: relative;
     z-index: 1;
-    border-radius: 20px; /* Hace que el botón sea redondeado */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 /* Efecto de hover para resaltar el botón */
 .categoria-titulo:hover {
-    background-color: #e8ae96; /* Cambia el color de fondo al pasar el cursor */
-    transform: translateY(-2px); /* Eleva ligeramente el botón */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+    background-color: #e8ae96;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones de submenús */
+.subcategoria {
+    background-color: #679B9B;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+/* Efecto de hover para resaltar el botón */
+.subcategoria:hover {
+    background-color: #e8ae96;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Establece un tamaño fijo para las imágenes en la lista de productos */
+.producto-lista img {
+    width: 200px; /* Ajusta el valor de acuerdo a mis preferencias */
+    height: auto; /* Mantiene la proporción de aspecto original */
 }
 
 .producto-lista,
@@ -62,7 +89,7 @@ nav a {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    position: relative; /* Cambiado de "absolute" a "relative" */
+    position: relative;
     top: 100%;
     left: 0;
     z-index: 0;
@@ -85,11 +112,11 @@ nav a {
     width: 100%;
 }
 
-/* Estilos para el formulario de contacto */
+/* Estilos para el formulario de contacto (todavia hay que revisarlo) */
 form {
     max-width: 400px;
     margin: 0 auto;
-    text-align: left; /* Alinea el formulario a la izquierda */
+    text-align: left;
 }
 
 form label,
@@ -98,25 +125,44 @@ form textarea {
     display: block;
     margin-bottom: 10px;
 }
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
 
-/* Estilos para la galería de imágenes en la sección "Inicio" */
+.map-container {
+    margin-bottom: 10px; /* Espacio entre el mapa y el formulario de contacto */
+}
+
+.contact-form {
+    width: 50%; /* Ajusta el ancho del formulario según tus preferencias */
+}
+/* Estilos para los títulos decorados */
+h2 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #FF9A76;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+/* Estilos para la galería de imágenes */
 .galeria {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 20px;
+    flex-wrap: wrap;
 }
 
-.galeria .imagen-container {
-    border: 2px solid #679B9B;
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 300px;
-    position: relative;
+.fila {
+    flex: 1;
 }
 
-.galeria img {
-    width: 50%; /* Reduce el tamaño de las imágenes a la mitad */
+.columna {
+    flex: 1;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
     height: auto;
 }
