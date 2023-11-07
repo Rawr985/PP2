@@ -166,3 +166,23 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Estilos para la galería */
+.submenu.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+    gap: 20px; /* Espacio entre elementos */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu.gallery li {
+    text-align: center;
+}
+
+.submenu.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+  /* Ajusta los estilos según tus preferencias */
