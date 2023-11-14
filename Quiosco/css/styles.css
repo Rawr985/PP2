@@ -135,7 +135,7 @@ form textarea {
 }
 
 .contact-form {
-    width: 50%; /* Ajusta el ancho del formulario según tus preferencias */
+    width: 50%; /* Ajustar el ancho del formulario */
 }
 /* Estilos para los títulos decorados */
 h2 {
@@ -184,5 +184,3 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-  /* Ajusta los estilos según tus preferencias */
