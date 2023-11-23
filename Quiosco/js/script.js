@@ -59,3 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+function abrirImagen(imagenMarco) {
+    const imagen = imagenMarco.querySelector("img").src;
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
+
+    const imagenAmpliada = document.createElement("img");
+    imagenAmpliada.src = imagen;
+    overlay.appendChild(imagenAmpliada);
+
+    overlay.onclick = function () {
+        overlay.remove();
+    };
+
+    document.body.appendChild(overlay);
+}

@@ -213,3 +213,48 @@ img {
     height: auto;
     background: none; /* Sin degradado en las imágenes de la galería */
 }
+<!-- Estilos Quienes somos -->
+<style>
+    .galeria {
+        display: flex;
+        margin-top: 20px; /* Ajusta según sea necesario */
+    }
+
+    .imagen-marco {
+        flex: 1;
+        margin-right: 20px; /* Espacio entre imágenes, ajusta según sea necesario */
+    }
+
+    .imagen-marco:last-child {
+        margin-right: 0; /* Elimina el margen derecho del último elemento para evitar espacios adicionales */
+    }
+
+    .imagen-quienes-somos {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid #FFFFFF;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+</style>
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #FFFFFF;
+    border-radius: 15px;
+}
