@@ -222,7 +222,7 @@ img {
 
     .imagen-marco {
         flex: 1;
-        margin-right: 20px; /* Espacio entre imágenes, ajusta según sea necesario */
+        margin-right: 20px; /* Espacio entre imágenes */
     }
 
     .imagen-marco:last-child {
@@ -257,4 +257,7 @@ img {
     max-height: 90%;
     border: 5px solid #FFFFFF;
     border-radius: 15px;
+}
+#Comoencontrarnos {
+    margin-top: 1cm;
 }
