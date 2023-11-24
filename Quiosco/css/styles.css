@@ -2,53 +2,44 @@
 body {
     font-family: 'Sunday Pizza';
     font-weight: bold;
-    margin: 20px;
+    margin: 5px;
     padding: 0;
-    background: linear-gradient(to right, #FFEADB, #D4A16A); /* Degradado en el fondo principal */
+    background: linear-gradient(to right, #FFEADB, #D4A16A);
     color: #637373;
 }
 
 header {
     font-family: 'Florensa Demo';
     font-weight: bold;
-    background: linear-gradient(to right, #FF9A76, #FF6B4D); /* Degradado en el encabezado */
+    background: linear-gradient(to right, #FF9A76, #FF6B4D);
     color: #FFFFFF;
     text-align: center;
     padding: 20px;
 }
+
 header h1 {
-    font-size: 40px; /* Ajusta el valor */
+    font-size: 40px;
 }
 
 /* Estilos para la sección de inicio */
 #inicio {
-    text-align: left;
-    margin-top: 2cm;
+    text-align: center;
+    margin-top: 0.5cm; /* Margen reducido */
 }
 
 /* Estilos para la frase de inicio */
 .frase-inicio {
-    font-size: 30px; /* Ajusta el tamaño de la letra */
+    font-size: 30px;
 }
-
-#quienessomos p {
-    font-size: 20px; /* Ajusta el valor */
-}
-
-#productos p {
-    font-size: 24px; /* Ajusta el valor */
-}
-
-
 
 /* Estilos para la imagen principal */
 .imagen-principal img {
-    max-width: auto; /* Ajusta el ancho máximo de la imagen */
+    max-width: 100%;
     height: auto;
     border: 5px solid #FFFFFF;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    margin: 20px auto; /* Centra la imagen con margen automático */
+    margin: 20px auto;
 }
 
 /* Estilos para la galería de imágenes */
@@ -70,6 +61,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -79,14 +71,14 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 1px; /* Margen dos veces más pequeño */
 }
 
 nav a {
     text-decoration: none;
     color: #FFFFFF;
-    padding: 10px 20px;
-    background: linear-gradient(to right, #679B9B, #4C7F7F); /* Degradado en los botones y elementos de resaltado */
+    padding: 10px 15px;
+    background: linear-gradient(to right, #679B9B, #4C7F7F);
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -99,10 +91,10 @@ nav a {
 }
 
 .categoria-titulo {
-    background: linear-gradient(to right, #679B9B, #4C7F7F); /* Degradado en los botones y elementos de resaltado */
+    background: linear-gradient(to right, #679B9B, #4C7F7F);
     color: #FFFFFF;
     cursor: pointer;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     z-index: 1;
     border-radius: 20px;
@@ -110,16 +102,14 @@ nav a {
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
-/* Efecto de hover para resaltar el botón */
 .categoria-titulo:hover {
-    background: linear-gradient(to right, #8C6239, #6D492F); /* Degradado más oscuro al hacer hover */
+    background: linear-gradient(to right, #8C6239, #6D492F);
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para los botones de submenús */
 .subcategoria {
-    background: linear-gradient(to right, #679B9B, #4C7F7F); /* Degradado en los botones y elementos de resaltado */
+    background: linear-gradient(to right, #679B9B, #4C7F7F);
     color: #FFFFFF;
     cursor: pointer;
     padding: 10px;
@@ -131,16 +121,15 @@ nav a {
     margin-top: 10px;
 }
 
-/* Establece un tamaño fijo para las imágenes en la lista de productos */
 .producto-lista img {
-    width: 200px; /* Ajusta el valor de acuerdo a mis preferencias */
-    height: auto; /* Mantiene la proporción de aspecto original */
-    background: none; /* Sin degradado en la imagen de los productos */
+    width: 200px;
+    height: auto;
+    background: none;
 }
 
 .producto-lista,
 .submenu {
-    max-height: 0;
+    max-height: 10;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     position: relative;
@@ -160,22 +149,21 @@ nav a {
     content: '\25E2';
 }
 
-/* Estilos para el mapa */
 #map {
     height: 300px;
     width: 100%;
 }
-/* Estilos para los títulos decorados */
+
 h2 {
     position: relative;
     display: inline-block;
     padding: 5px 15px;
-    background: linear-gradient(to right, #FF9A76, #FF6B4D); /* Degradado en los títulos decorados */
+    background: linear-gradient(to right, #FF9A76, #FF6B4D);
     color: #FFFFFF;
     border-radius: 20px;
     margin: 10px 0;
 }
-/* Estilos para la galería de imágenes */
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -190,15 +178,10 @@ h2 {
     margin: 5px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-/* Estilos para la galería */
 .submenu.gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -211,34 +194,33 @@ img {
 .submenu.gallery img {
     max-width: 100%;
     height: auto;
-    background: none; /* Sin degradado en las imágenes de la galería */
+    background: none;
 }
-<!-- Estilos Quienes somos -->
-<style>
-    .galeria {
-        display: flex;
-        margin-top: 20px; /* Ajusta según sea necesario */
-    }
 
-    .imagen-marco {
-        flex: 1;
-        margin-right: 20px; /* Espacio entre imágenes */
-    }
+/* Estilos Quienes somos */
+.galeria {
+    display: flex;
+    margin-top: 10px; /* Margen reducido */
+}
 
-    .imagen-marco:last-child {
-        margin-right: 0; /* Elimina el margen derecho del último elemento para evitar espacios adicionales */
-    }
+.imagen-marco {
+    flex: 1;
+    margin-right: 10px; /* Margen reducido */
+}
 
-    .imagen-quienes-somos {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 5px solid #FFFFFF;
-        border-radius: 10px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-</style>
+.imagen-marco:last-child {
+    margin-right: 0;
+}
+
+.imagen-quienes-somos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
 .overlay {
     position: fixed;
@@ -246,18 +228,4 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 5px solid #FFFFFF;
-    border-radius: 15px;
-}
-#Comoencontrarnos {
-    margin-top: 1cm;
-}
+    background: rgba(0, 0, 0
