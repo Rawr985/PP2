@@ -35,7 +35,7 @@ header h1 {
 
 /* Estilos para la frase de inicio */
 .frase-inicio {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Estilos para la imagen principal */
@@ -233,7 +233,11 @@ h2 {
 }
 
 #Conocenos {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
     margin-top: 2cm;
+}
+#Conocenos p {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
 
 #Encontranos p {
@@ -245,7 +249,7 @@ h2 {
 }
 
 #productos p {
-    font-size: 25px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
 
 .overlay {
