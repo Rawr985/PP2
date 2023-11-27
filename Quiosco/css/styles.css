@@ -9,7 +9,6 @@ body {
 }
 
 header {
-    font-family: 'Florensa Demo', sans-serif;
     font-weight: bold;
     background: #CBDDD1;
     color: #FFFFFF;
@@ -19,6 +18,13 @@ header {
 
 header h1 {
     font-size: 40px;
+}
+@font-face {
+    font-family: "Sunday Pizza";
+    src: url("fonts/Sunday Pizza.ttf") format("ttf"),
+        url("fonts/Sunday Pizza.ttff") format("ttf");
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Estilos para la sección de inicio */
