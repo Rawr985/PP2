@@ -4,14 +4,14 @@ body {
     font-weight: bold;
     margin: 5px;
     padding: 0;
-    background: linear-gradient(to right, #FFEADB, #D4A16A);
-    color: #637373;
+    background: #CBDDD1;
+    color: #272727;
 }
 
 header {
     font-family: 'Florensa Demo', sans-serif;
     font-weight: bold;
-    background: linear-gradient(to right, #FF9A76, #FF6B4D);
+    background: #CBDDD1;
     color: #FFFFFF;
     text-align: center;
     padding: 20px;
@@ -78,7 +78,7 @@ nav a {
     text-decoration: none;
     color: #FFFFFF;
     padding: 10px 15px;
-    background: linear-gradient(to right, #679B9B, #4C7F7F);
+    background: #457D58;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -91,7 +91,7 @@ nav a {
 }
 
 .categoria-titulo {
-    background: linear-gradient(to right, #679B9B, #4C7F7F);
+    background: #457D58 ;
     color: #FFFFFF;
     cursor: pointer;
     padding: 20px;
@@ -103,14 +103,14 @@ nav a {
 }
 
 .categoria-titulo:hover {
-    background: linear-gradient(to right, #8C6239, #6D492F);
+    background: #1F5014;
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .subcategoria {
-    background: linear-gradient(to right, #679B9B, #4C7F7F);
-    color: #FFFFFF;
+    background: #F6F6E9;
+    color: #272727;
     cursor: pointer;
     padding: 10px;
     position: relative;
@@ -158,7 +158,7 @@ h2 {
     position: relative;
     display: inline-block;
     padding: 5px 15px;
-    background: linear-gradient(to right, #FF9A76, #FF6B4D);
+    background: #272727;
     color: #FFFFFF;
     border-radius: 20px;
     margin: 10px 0;
