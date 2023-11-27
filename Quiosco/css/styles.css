@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: 'Sunday Pizza';
+    font-family: 'Sunday Pizza', sans-serif;
     font-weight: bold;
     margin: 5px;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    font-family: 'Florensa Demo';
+    font-family: 'Florensa Demo', sans-serif;
     font-weight: bold;
     background: linear-gradient(to right, #FF9A76, #FF6B4D);
     color: #FFFFFF;
@@ -221,18 +221,23 @@ h2 {
     overflow: hidden;
     cursor: pointer;
 }
+
 #Conocenos p {
     font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
+
 #Conocenos {
     margin-top: 2cm;
 }
+
 #Encontranos p {
     font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
+
 #Encontranos {
     margin-top: 2cm;
 }
+
 #productos p {
     font-size: 25px; /* Ajusta el tamaño de la fuente según tus preferencias */
 }
@@ -243,5 +248,5 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0
+    background: rgba(0, 0, 0);
 }
