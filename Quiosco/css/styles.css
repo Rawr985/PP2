@@ -66,6 +66,7 @@ header h1 {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -85,8 +86,7 @@ nav a {
     color: #FFFFFF;
     padding: 10px 15px;
     background: #457D58;
-    border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 21px;
 }
@@ -104,7 +104,7 @@ nav a {
     padding: 20px;
     position: relative;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
@@ -122,7 +122,7 @@ nav a {
     padding: 10px;
     position: relative;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     margin-top: 10px;
@@ -167,7 +167,7 @@ h2 {
     padding: 5px 15px;
     background: #272727;
     color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px 0;
 }
 
@@ -234,7 +234,7 @@ h2 {
 }
 
 #Conocenos {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
     margin-top: 2cm;
 }
 #Conocenos p {
@@ -251,6 +251,9 @@ h2 {
 
 #productos p {
     font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+#productos {
+    margin-top: 2cm;
 }
 
 .overlay {
