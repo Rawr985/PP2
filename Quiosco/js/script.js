@@ -59,18 +59,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-function abrirImagen(imagenMarco) {
-    const imagen = imagenMarco.querySelector("img").src;
-    const overlay = document.createElement("div");
-    overlay.className = "overlay";
+function abrirImagen(imagen) {
+    // Crea el modal
+    const modal = document.createElement("div");
+    modal.classList.add("modal");
 
-    const imagenAmpliada = document.createElement("img");
-    imagenAmpliada.src = imagen;
-    overlay.appendChild(imagenAmpliada);
+    // Crea la imagen en el modal
+    const imagenModal = document.createElement("img");
+    imagenModal.src = imagen.src;
+    imagenModal.alt = imagen.alt;
+    modal.appendChild(imagenModal);
 
-    overlay.onclick = function () {
-        overlay.remove();
-    };
+    // Agrega el modal al cuerpo del documento
+    document.body.appendChild(modal);
 
-    document.body.appendChild(overlay);
+    // Cierra el modal al hacer clic fuera de la imagen
+    modal.addEventListener("click", function () {
+        document.body.removeChild(modal);
+    });
 }
