@@ -98,7 +98,7 @@ nav a {
 }
 
 .categoria-titulo {
-    background: #457D58 ;
+    background: #457D58;
     color: #FFFFFF;
     cursor: pointer;
     padding: 20px;
@@ -143,17 +143,6 @@ nav a {
     top: 100%;
     left: 0;
     z-index: 0;
-}
-
-.categoria-titulo::after,
-.subcategoria h4::after {
-    content: '\25B6';
-    float: right;
-}
-
-.categoria-titulo.open::after,
-.subcategoria h4.open::after {
-    content: '\25E2';
 }
 
 #map {
@@ -282,4 +271,20 @@ h2 {
     max-height: 90%;
     border-radius: 10px;
     cursor: pointer;
+}
+/* Estilos del botón flotante */
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #1F5014;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: display 0.3s;
+    z-index: 1000; /* Ajusta el valor según sea necesario */
 }

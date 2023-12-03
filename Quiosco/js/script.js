@@ -1,44 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const categoriaTitulos = document.querySelectorAll(".categoria-titulo");
-    const subcategoriaTitulos = document.querySelectorAll(".subcategoria h4");
-
-    categoriaTitulos.forEach((titulo) => {
-        titulo.addEventListener("click", function () {
-            const productoLista = titulo.nextElementSibling;
-            const openMenus = document.querySelectorAll(".categoria-titulo.open");
-
-            // Cerrar otros menús abiertos
-            openMenus.forEach((menu) => {
-                if (menu !== titulo) {
-                    const otherMenu = menu.nextElementSibling;
-                    otherMenu.style.maxHeight = "0px";
-                    menu.classList.remove("open");
-                }
-            });
-
-            if (productoLista.style.maxHeight === "0px" || !productoLista.style.maxHeight) {
-                productoLista.style.maxHeight = productoLista.scrollHeight + "px";
-                titulo.classList.add("open"); // Agrega la clase "open" al título
-            } else {
-                productoLista.style.maxHeight = "0px";
-                titulo.classList.remove("open"); // Quita la clase "open" al título
-            }
-        });
-    });
-
-    subcategoriaTitulos.forEach((titulo) => {
-        titulo.addEventListener("click", function () {
-            const submenu = titulo.nextElementSibling;
-            if (submenu.style.maxHeight === "0px" || !submenu.style.maxHeight) {
-                submenu.style.maxHeight = submenu.scrollHeight + "px";
-                titulo.classList.add("open"); // Agrega la clase "open" al título
-            } else {
-                submenu.style.maxHeight = "0px";
-                titulo.classList.remove("open"); // Quita la clase "open" al título
-            }
-        });
-    });
-
     // Agregar desplazamiento suave al hacer clic en los enlaces de navegación
     const links = document.querySelectorAll("nav a");
 
@@ -58,23 +18,79 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-});
-function abrirImagen(imagen) {
-    // Crea el modal
-    const modal = document.createElement("div");
-    modal.classList.add("modal");
 
-    // Crea la imagen en el modal
-    const imagenModal = document.createElement("img");
-    imagenModal.src = imagen.src;
-    imagenModal.alt = imagen.alt;
-    modal.appendChild(imagenModal);
+    // Función para abrir la imagen al hacer clic en ellas en la sección "Conócenos"
+    const imagenesConocenos = document.querySelectorAll("#Conocenos img");
 
-    // Agrega el modal al cuerpo del documento
-    document.body.appendChild(modal);
-
-    // Cierra el modal al hacer clic fuera de la imagen
-    modal.addEventListener("click", function () {
-        document.body.removeChild(modal);
+    imagenesConocenos.forEach((imagen) => {
+        imagen.addEventListener("click", function () {
+            abrirImagen(imagen);
+        });
     });
-}
+
+    function abrirImagen(imagen) {
+        // Crea el modal
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+
+        // Crea la imagen en el modal
+        const imagenModal = document.createElement("img");
+        imagenModal.src = imagen.src;
+        imagenModal.alt = imagen.alt;
+        modal.appendChild(imagenModal);
+
+        // Agrega el modal al cuerpo del documento
+        document.body.appendChild(modal);
+
+        // Cierra el modal al hacer clic fuera de la imagen
+        modal.addEventListener("click", function () {
+            document.body.removeChild(modal);
+        });
+    }
+
+    // Mostrar u ocultar el botón según el desplazamiento
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btnScrollToTop = document.getElementById("btnScrollToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnScrollToTop.style.display = "block";
+        } else {
+            btnScrollToTop.style.display = "none";
+        }
+    }
+
+    // Desplazarse hacia arriba al hacer clic en el botón
+    function scrollToTop() {
+        document.body.scrollTop = 0; // Para Safari
+        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    }
+
+    // Mostrar o ocultar el botón según el desplazamiento
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var btnScrollToTop = document.getElementById("btnScrollToTop");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnScrollToTop.style.display = "block";
+        } else {
+            btnScrollToTop.style.display = "none";
+        }
+    }
+
+    // Desplazarse hacia arriba suavemente al hacer clic en el botón
+    document.getElementById("btnScrollToTop").onclick = function () {
+        smoothScrollToTop();
+    };
+
+    function smoothScrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    }
+});
