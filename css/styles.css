@@ -1,0 +1,290 @@
+/* Estilos generales */
+body {
+    font-family: 'Sunday Pizza', sans-serif;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+    background: #CBDDD1;
+    color: #272727;
+}
+
+header {
+    font-weight: bold;
+    background: #CBDDD1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+@font-face {
+    font-family: "Sunday Pizza";
+    src: url("fonts/Sunday Pizza.ttf") format("ttf"),
+        url("fonts/Sunday Pizza.ttff") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    text-align: left;
+    margin-top: 2cm; /* Margen reducido */
+}
+
+/* Estilos para la frase de inicio */
+.frase-inicio {
+    font-size: 20px;
+}
+
+/* Estilos para la imagen principal */
+.imagen-principal img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fila {
+    flex: 1;
+}
+
+.columna {
+    flex: 1;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1px; /* Margen dos veces más pequeño */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    background: #457D58;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+/* Estilos para los productos */
+.categoria {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.categoria-titulo {
+    background: #457D58;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.categoria-titulo:hover {
+    background: #1F5014;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subcategoria {
+    background: #F6F6E9;
+    color: #272727;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+.producto-lista img {
+    width: 200px;
+    height: auto;
+    background: none;
+}
+
+.producto-lista,
+.submenu {
+    max-height: 10;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 0;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    background: #272727;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fila {
+    flex: 1;
+}
+
+.columna {
+    flex: 1;
+    margin: 5px;
+}
+
+.submenu.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu.gallery li {
+    text-align: center;
+}
+
+.submenu.gallery img {
+    max-width: 100%;
+    height: auto;
+    background: none;
+}
+
+/* Estilos Quienes somos */
+.galeria {
+    display: flex;
+    margin-top: 10px; /* Margen reducido */
+}
+
+.imagen-marco {
+    flex: 1;
+    margin-right: 10px; /* Margen reducido */
+}
+
+.imagen-marco:last-child {
+    margin-right: 0;
+}
+
+.imagen-quienes-somos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#Conocenos p {
+    font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+#Conocenos {
+    font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    margin-top: 2cm;
+}
+#Conocenos p {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+#Encontranos p {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+
+#Encontranos {
+    margin-top: 2cm;
+}
+
+#productos p {
+    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+}
+#productos {
+    margin-top: 2cm;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0);
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Asegura que el modal esté en la parte superior */
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Estilos del botón flotante */
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #1F5014;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: display 0.3s;
+    z-index: 1000; /* Ajusta el valor según sea necesario */
+}
