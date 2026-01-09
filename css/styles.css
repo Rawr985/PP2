@@ -19,10 +19,10 @@ header {
 header h1 {
     font-size: 40px;
 }
+
 @font-face {
     font-family: "Sunday Pizza";
-    src: url("fonts/Sunday Pizza.ttf") format("ttf"),
-        url("fonts/Sunday Pizza.ttff") format("ttf");
+    src: url("../fonts/Sunday Pizza.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -30,7 +30,7 @@ header h1 {
 /* Estilos para la sección de inicio */
 #inicio {
     text-align: left;
-    margin-top: 2cm; /* Margen reducido */
+    margin-top: 80px;
 }
 
 /* Estilos para la frase de inicio */
@@ -52,6 +52,7 @@ header h1 {
 .galeria {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .fila {
@@ -78,7 +79,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 1px; /* Margen dos veces más pequeño */
+    margin: 0 1px;
 }
 
 nav a {
@@ -136,13 +137,9 @@ nav a {
 
 .producto-lista,
 .submenu {
-    max-height: 10;
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
-    position: relative;
-    top: 100%;
-    left: 0;
-    z-index: 0;
 }
 
 #map {
@@ -158,20 +155,6 @@ h2 {
     color: #FFFFFF;
     border-radius: 10px;
     margin: 10px 0;
-}
-
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.fila {
-    flex: 1;
-}
-
-.columna {
-    flex: 1;
-    margin: 5px;
 }
 
 .submenu.gallery {
@@ -194,14 +177,9 @@ h2 {
 }
 
 /* Estilos Quienes somos */
-.galeria {
-    display: flex;
-    margin-top: 10px; /* Margen reducido */
-}
-
 .imagen-marco {
     flex: 1;
-    margin-right: 10px; /* Margen reducido */
+    margin-right: 10px;
 }
 
 .imagen-marco:last-child {
@@ -218,41 +196,31 @@ h2 {
     cursor: pointer;
 }
 
-#Conocenos p {
-    font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
-}
-
 #Conocenos {
-    font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
-    margin-top: 2cm;
-}
-#Conocenos p {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    font-size: 18px;
+    margin-top: 80px;
 }
 
-#Encontranos p {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
+#Conocenos p {
+    font-size: 20px;
 }
 
 #Encontranos {
-    margin-top: 2cm;
+    margin-top: 80px;
+}
+
+#Encontranos p {
+    font-size: 20px;
+}
+
+#productos {
+    margin-top: 80px;
 }
 
 #productos p {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según tus preferencias */
-}
-#productos {
-    margin-top: 2cm;
+    font-size: 20px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0);
-}
 .modal {
     position: fixed;
     top: 0;
@@ -263,7 +231,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Asegura que el modal esté en la parte superior */
+    z-index: 9999;
 }
 
 .modal img {
@@ -272,6 +240,7 @@ h2 {
     border-radius: 10px;
     cursor: pointer;
 }
+
 /* Estilos del botón flotante */
 #btnScrollToTop {
     display: none;
@@ -286,5 +255,5 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     transition: display 0.3s;
-    z-index: 1000; /* Ajusta el valor según sea necesario */
+    z-index: 1000;
 }
